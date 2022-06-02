@@ -1,0 +1,25 @@
+[ {
+  "id" : "892774f7-a147-1b04-d637-280259d8f950",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "4a2a93dc-ef9e-d03f-837d-fce4cd1a931d",
+  "name" : "richtext",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

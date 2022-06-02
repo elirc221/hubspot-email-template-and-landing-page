@@ -1,0 +1,20 @@
+[ {
+  "id" : "cab395ac-3b20-e83f-01b8-9fef8da18c03",
+  "name" : "richtext",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2 style=\"font-size: 26px;\"><span style=\"font-size: 26px; color: #1259a6;\">Hello {{ personalization_token('contact.firstname', 'Name') }},</span></h2>\n<p>To generate a definitive picture of exactly how Atlas Health helps patients afford high-cost therapies while growing hospital and health system revenue, we invited KLAS Research to survey our clients about their experiences with us. Their report <strong>Connecting Patients with Philanthropic Financial Aid</strong> verifies the effectiveness of our AI-powered solutions for patient assistance and health equity programs. <a href=\"https://atlas.health/resources/klas-etech-spotlight-report\" rel=\"noopener\"><span style=\"color: #ed3847;\">Read the full report.</span></a></p>\n<p>At Atlas Health, we’re committed to saving and improving patient lives by ensuring everyone has access to the care they need. It’s our mission to help healthcare providers like you enroll patients in the best medical financial aid programs available.</p>"
+}, {
+  "id" : "b9535dd1-0dd3-baa0-ea77-c1b8cadc2dfc",
+  "name" : "remove_bottom_space",
+  "display_width" : null,
+  "label" : "Remove Bottom Space",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

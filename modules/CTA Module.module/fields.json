@@ -1,0 +1,108 @@
+[ {
+  "id" : "a3ffd316-3211-68f5-1ea0-fbfedcfac9e6",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "923b0ae4-fba5-51b6-9c23-c384e11dfaf7",
+  "name" : "icon_caption",
+  "display_width" : null,
+  "label" : "Icon Caption",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "HAPPENING SOON"
+}, {
+  "id" : "210aea53-9ef3-d946-a75c-f84f3732c540",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "4a195c1a-dadc-5f00-35bc-03936867d1b6",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Atlas Health is attending the HFMA Annual Conference from June 26th-29th in Denver, CO. Attend in person or virtually, join our presentation with Covenant Health, and meet us at booth #420! More details can be found on our event page.</p>"
+}, {
+  "id" : "2196d626-7c72-8885-bdae-01c763b50125",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e66bd384-2fc8-d420-3ca9-f2e6f30dd7c9",
+    "name" : "button_label",
+    "display_width" : null,
+    "label" : "Button Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn More"
+  }, {
+    "id" : "273adee0-e44f-0783-dfd1-e4e11ceea25a",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://atlas.health/resources/events-2022-hfma-annual-conference",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_label" : "Learn More",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://atlas.health/resources/events-2022-hfma-annual-conference",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

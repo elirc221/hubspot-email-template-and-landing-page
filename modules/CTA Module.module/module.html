@@ -1,0 +1,72 @@
+<table class="full-width" style="background-color: #1259A6;" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td>
+      <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="gap-left gap-right" style="padding-bottom: 20px;padding-top: 30px;">
+            <table style="width:100%;">
+              <tr>
+                <td width="48"> 
+                  {% set icon_src = get_asset_url('/Email Templates - 2022/images/calander-icon.png') %}
+                  {% if module.icon.src %}
+                  {% set icon_src = module.icon.src %}
+                  {% endif %}
+                  <img src="{{ icon_src }}" alt="icon" width="40" style="height; auto;vertical-align: middle;">
+                </td>
+                <td style="padding-left: 10px;font-size: 16px; line-height: 26px; color: white;letter-spacing: 1.28px;font-family: Helvetica, Arial, sans-serif;">
+                  {{ module.icon_caption }}
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="cta-section-left-column gap-left mobile-gap-right">
+            {% if module.image.src %}
+            {% set image_path = module.image.src %}
+            {% else %}
+            {% set image_path = get_asset_url('/Email Templates - 2022/images/happening-soon.png') %}
+            {% endif %}
+            <img src="{{ image_path }}" alt="{{ module.image.alt }}" loading="lazy" width="{{ module.image.width }}" height="{{ module.image.height }}">
+          </td>
+          <td class="cta-section-right-column gap-right mobile-gap-left">
+            <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-top: 10px;padding-bottom: 20px;color: #fff;font-size: 16px;line-height: 26px;">
+                  {{ module.content }}
+                </td>
+              </tr>
+            </table>
+            <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <table class="cta-button" cellpadding="0" cellspacing="0" border="0" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0 !important; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+                    <tbody>
+                      <tr>
+                      <!--[if mso]>
+                      <td align="center" valign="middle" bgcolor="#ED3847" role="presentation"  valign="middle" style="border-radius:5px;cursor:auto;background-color:#ED3847;padding:8px 18px;">
+                      <![endif]-->
+                      <!--[if !mso]><!-- -->
+                      <td align="center" valign="middle" bgcolor="#ED3847" role="presentation" style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:16px;line-height: 26px; color:#23496d; word-break:break-word; border-radius:5px; cursor:auto; background-color:#ED3847">
+                        <!--<![endif]-->
+                        {% set href = module.button.link.url.href %}
+                        {% if !module.button.link.url.href %}
+                          {% set href = "javascript:;" %}
+                        {% endif %}
+                        <a href="{{ href }}" target="_blank" style="color:#00a4bd; mso-line-height-rule:exactly; font-size:16px; line-height: 26px;font-family:Arial, sans-serif; Margin:0; text-transform:none; text-decoration:none; padding:8px 18px; display:block" data-hs-link-id="0">
+                          <strong style="color:#ffffff;font-weight:bold;text-decoration:none;font-style:normal;">{{ module.button.button_label }}</strong>
+                        </a>
+                      </td>
+                      </tr>
+                    </tbody></table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

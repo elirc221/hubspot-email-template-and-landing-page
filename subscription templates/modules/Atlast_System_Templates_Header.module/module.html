@@ -1,0 +1,22 @@
+<div class="st-header">
+  <div class="st-container">
+    <div class="st-header-logo">
+      {% set loadingAttr = module.logo.loading != 'disabled' ? '{{ module.logo.loading }}' : '' %}
+      {% logo
+        override_inherited_src="{{ module.logo.override_inherited_src }}"
+        src="{{ module.logo.src }}"
+        alt="{{ module.logo.alt }}"
+        width="{{ module.logo.width }}"
+        height="{{ module.logo.height }}"
+        loading="{{ loadingAttr }}"
+        suppress_company_name="{{ module.logo.suppress_company_name }}"
+      %}
+    </div>
+    <div class="st-header-right">
+      <img src="{{ get_asset_url('/Email Templates - 2022/images/header-dots.png') }}" alt="image" />
+      {% if module.mobile_number %}
+        <a href="tel:{{ module.mobile_number }}">{{ module.mobile_number }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

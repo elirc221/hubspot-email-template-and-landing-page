@@ -1,0 +1,29 @@
+<table class="full-width" bgcolor="#0A2B4F" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="hero-header-left-column gap-left mobile-gap-right" valign="middle" height="245">
+      <table>
+        <tr>
+          <td style="width: 48px; vertical-align: middle">
+            {% set icon_src = get_asset_url('/Email Templates - 2022/images/report-icon.png') %}
+            {% if module.icon.src %}
+            {% set icon_src = module.icon.src %}
+            {% endif %}
+            <img src="{{ icon_src }}" alt="icon" width="40px" style="vertical-align:middle;height: auto;">
+          </td>
+          <td style="vertical-align: middle;color: white;text-transform: uppercase;letter-spacing: 0.7px;">{{ module.icon_caption }}</td>
+        </tr>
+      </table>
+      <table class="full-width" role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tbody><tr><td style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:15px; color:#23496d; word-break:break-word; padding-top:10px;"><div id="hs_cos_wrapper_module_16538123072292" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div id="hs_cos_wrapper_module_16538123072292_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div class="font-dm" style="mso-line-height-rule:exactly; font-size:30px; font-weight:bold;color: #a8e3f5;ms-text-size-adjust: none; mso-line-height-rule: exactly;">{{ module.title }}<!--[if gte mso 12]><br />&nbsp;<![endif]--></div></div></div></td></tr></tbody></table>
+    </td>
+    {% set bg_img_src = get_asset_url('/Email Templates - 2022/images/hero-img.png') %}
+    {% if module.image.src %}
+    {% set bg_img_src = module.image.src %}
+    {% endif %}
+    <td class="hero-header-right-column" background="{{ bg_img_src }}" style="background-image:url('{{ bg_img_src }}'); background-position:center; background-repeat:no-repeat; background-size:cover;">
+      <!--[if gte mso 9]>
+      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: block; width: 240px; height: 245px;" src="{{ bg_img_src }}" vspace="0" />
+      <![endif]-->
+
+    </td>
+  </tr>
+</table>

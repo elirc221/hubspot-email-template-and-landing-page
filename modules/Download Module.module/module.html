@@ -1,0 +1,53 @@
+<table class="full-width" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="download-section-left-column gap-left mobile-gap-right" style="vertical-align: middle;">
+      <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td>
+            <h3 style="margin-bottom: 5px;mso-line-height-rule:exactly; color: #1259A6;">{{ module.title }}</h3>
+            <p style="mso-line-height-rule:exactly; font-size:16px; font-weight:bold;margin-bottom: 30px;color: #0a2b4f;">{{ module.caption_text }}</p>
+          </td>
+        </tr>
+      </table>
+      <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0 !important; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+        <tbody>
+          <tr>
+            <!--[if mso]>
+            <td align="center" valign="middle" bgcolor="#ED3847" role="presentation"  valign="middle" style="border-radius:5px;cursor:auto;background-color:#ED3847;padding:10px 18px;">
+            <![endif]-->
+            <!--[if !mso]><!-- -->
+            <td align="center" valign="middle" bgcolor="#ED3847" role="presentation" style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:15px; color:#23496d; word-break:break-word; border-radius:5px; cursor:auto; background-color:#ED3847">
+              <!--<![endif]-->
+              {% set href = module.button.link.url.href %}
+              {% if !module.button.link.url.href %}
+              {% set href = "javascript:;" %}
+              {% endif %}
+              <a href="{{ href }}" target="_blank" style="color:#00a4bd; mso-line-height-rule:exactly; font-size:16px;line-height: 26px; font-family:Arial, sans-serif; Margin:0; text-transform:none; text-decoration:none; padding:10px 18px; display:block" data-hs-link-id="0"
+                 {% if module.button.link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.button.link.rel %}rel="{{ module.button.link.rel }}"{% endif %}
+                 >
+                <strong style="color:#ffffff;font-weight:bold;text-decoration:none;font-style:normal;"> {{ module.button.button_label }} </strong>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td class="download-section-left-column gap-right mobile-gap-left">
+      <table class="hse-image-wrapper" role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+        <tbody>
+          <tr>
+            <td align="center" valign="top" style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; color:#23496d; word-break:break-word; text-align:center; padding:0px; font-size:0px">
+              {% if module.image.src %}
+              {% set image_path = module.image.src %}
+              {% else %}
+              {% set image_path = get_asset_url('/Email Templates - 2022/images/full-report.png') %}
+              {% endif %}
+              <img src="{{ image_path }}" alt="download image" width="230" style="outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; max-width:100%; font-size:16px" align="middle">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,29 @@
+[ {
+  "id" : "5ca22f06-6538-4091-4329-c7865263bd90",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "34c8038a-ad13-03e7-68ca-6b926de7ff35",
+  "name" : "phone_number",
+  "display_width" : null,
+  "label" : "Phone Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "(888) 566-6126"
+} ]

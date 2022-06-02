@@ -1,0 +1,96 @@
+[ {
+  "id" : "3ebca8e5-dfc5-b101-2889-45bf436ba530",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Check out the full report!"
+}, {
+  "id" : "2fee0149-3ca1-0f05-16fe-1d3a7bd68167",
+  "name" : "caption_text",
+  "display_width" : null,
+  "label" : "Caption Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "KLAS Spotlight: Atlas Health"
+}, {
+  "id" : "120be022-9e57-a5ec-f53e-528a2ed134ad",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy",
+    "size_type" : "exact"
+  }
+}, {
+  "id" : "8d3aa739-69c2-0d52-0ae7-2a860e4ba0aa",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e9459127-75ee-1427-58a6-47605b5c7b99",
+    "name" : "button_label",
+    "display_width" : null,
+    "label" : "Button label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Download Report"
+  }, {
+    "id" : "f7873656-a596-ffb5-b8d9-07b7e151430b",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://atlas.health/resources/klas-etech-spotlight-report",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_label" : "Download Report",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://atlas.health/resources/klas-etech-spotlight-report",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

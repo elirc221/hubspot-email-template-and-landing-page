@@ -1,0 +1,33 @@
+<table class="full-width" cellpadding="0" cellspacing="0" border="0" style="background-color:#0A2B4F"> 
+  <tr>
+    <td class="footer-left-column gap-left">
+      {% set footer_logo = get_asset_url('/Email Templates - 2022/images/atlas-logo-white.png') %}
+      {% if module.logo.src %}
+        {% set footer_logo = module.logo.src %}
+      {% endif %}
+      <img class="footer-logo" src="{{ footer_logo }}" alt="atlast logo white" width="97">
+    </td>
+    <td class="footer-right-column gap-right" style="width: 100%;" align="right">
+      <table>
+        <tr>
+          <td class="mobile-hidden" style="padding-right: 11px;color: #ffffff;vertical-align: middle;">
+            {{ module.linkedin_caption_text }}
+          </td>
+          <td style="max-width: 17px;">
+            {% set href = module.linkedin_url.url.href %}
+            {% if !module.linkedin_url.url.href %}
+              {% set href = "javascript:;" %}
+            {% endif %}
+            <a href="{{ href }}">
+              {% set linkedin_icon = get_asset_url('/Email Templates - 2022/images/linkedin-logo.png') %}
+              {% if module.linkedin_icon.src %}
+                {% set linkedin_icon = module.linkedin_icon.src %}
+              {% endif %}
+                <img style="vertical-align: middle;" src="{{ linkedin_icon }}" alt="linkedin icon" width="17px" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

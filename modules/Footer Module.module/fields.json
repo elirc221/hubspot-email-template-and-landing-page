@@ -1,0 +1,64 @@
+[ {
+  "id" : "20845b56-2800-854b-69d4-ce762eaeaa72",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "4a9ee5e2-b62c-1cab-fa45-72379f5188f5",
+  "name" : "linkedin_icon",
+  "display_width" : null,
+  "label" : "Linkedin Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "945b355d-84a9-ac47-35e3-34dbd55b18ac",
+  "name" : "linkedin_url",
+  "display_width" : null,
+  "label" : "Linkedin Url",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "ca496d50-f7a1-f449-d6ac-7700f17d8d2a",
+  "name" : "linkedin_caption_text",
+  "display_width" : null,
+  "label" : "Linkedin Caption Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Join the conversation!"
+} ]

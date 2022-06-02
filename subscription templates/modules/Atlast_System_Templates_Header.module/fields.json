@@ -1,0 +1,30 @@
+[ {
+  "id" : "5f307939-0415-45bf-fbce-d7d339e46fc4",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://25907844.fs1.hubspotusercontent-eu1.net/hubfs/25907844/Atlas-logo-3.png",
+    "alt" : "Atlas-logo-3",
+    "suppress_company_name" : true,
+    "width" : 143,
+    "height" : 39
+  }
+}, {
+  "id" : "a0b5f9f0-0da2-3f5f-124e-4c14681a4d1c",
+  "name" : "mobile_number",
+  "display_width" : null,
+  "label" : "Mobile Number",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "(888) 566-6126"
+} ]

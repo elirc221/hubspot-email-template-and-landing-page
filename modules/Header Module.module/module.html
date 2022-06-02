@@ -1,0 +1,24 @@
+<table class="width-full" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="gap-left p-header">
+      {% set logo_src = get_asset_url('/Email Templates - 2022/images/atlas-logo.png') %}
+      {% if module.image.src %}
+      {% set logo_src = module.image.src %}
+      {% endif %}
+      <img class="header-logo" src="{{ logo_src }}" alt="atlas logo" width="143" style="height: auto;" />
+    </td>
+    <td class="gap-right" style="width: 100%;" align="right">
+      <table class="width-full" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td width="40" class="mobile-hidden">
+            {% set logo_src = get_asset_url('/Email Templates - 2022/images/header-dots.png') %}
+            <img src="{{ logo_src }}" alt="atlas header dots" width="40" style="height: auto;" />
+          </td>
+          <td style="padding-left: 17px;">
+            <a style="color: #ED3847;text-decoration: none;font-weight: bold;" href="tel:{{ module.phone_number }}">{{ module.phone_number }}</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

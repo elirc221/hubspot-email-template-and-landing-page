@@ -1,0 +1,359 @@
+<!--
+templateType: email
+isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+    </style>
+    <style type="text/css" id="hs-inline-css">
+      /*<![CDATA[*/
+      /* everything in this style tag will be inlined onto matching elements */
+      *{
+        box-sizing: border-box;
+        ms-text-size-adjust: none; 
+        mso-line-height-rule: exactly;
+      }
+      body{
+        background: #f2f2f2;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      h1,h2,h3,h4,h5,h6{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-family: 'DM Serif Text', serif;
+        mso-line-height-rule:exactly;
+      }
+      h2{
+        font-size: 26px;
+        line-height: 36px;
+        mso-line-height-rule:exactly;
+      }
+      h3{
+        font-size: 24px;
+        mso-line-height-rule:exactly;
+        line-height: 36px;
+      }
+      p{
+        margin: 0px;
+      }
+      body, p,ul,li,button{
+        font-family: Arial, sans-serif;
+        color: #0A2B4F;
+        webkit-font-smoothing: antialiased;
+      }
+      a{
+        text-decoration: none;
+      }
+      p{
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 26px;
+      }
+      table{
+        border-spacing: 0;
+        border-collapse: collapse;
+        border: 0 none;
+      }
+      td{
+        border: 0 none;
+      }
+      .font-dm{
+        font-family: 'DM Serif Text', serif;
+      }
+      .full-width{
+        width: 100%;
+      }
+      .gap-left{
+        padding-left: 49px;
+      }
+      .gap-right{
+        padding-right: 49px;
+      }
+      .hero-header-left-column{
+        width: 60%;
+      }
+      .hero-header-right-column{
+        width: 40%;
+      }
+      .p-header{
+        padding-top: 22px;
+        padding-bottom: 22px;
+      }
+      .richtext-section{
+        padding-top:50px;
+        padding-bottom: 50px;
+      }
+      .richtext-section a{
+        text-decoration: underline;
+        font-weight: bold;
+        color: #ed3847;
+      }
+      .p-download{
+        padding:0px 49px 50px;
+      }
+      .download-section-left-column{
+        padding-bottom: 20px;
+        padding-right: 30px;
+        width: 60%;
+      }
+      .download-section-right-column{
+        padding-bottom: 20px;
+        width: 40%;
+      }
+      .cta-section-left-column{
+        width: 40%;
+        padding-bottom: 30px;
+      }
+      .cta-section-right-column{
+        width: 60%;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        color: #fff;
+      }
+      .logo-header{
+        width: 143px;
+        height: auto;
+      }
+      .footer-left-column{
+        width: 250px;
+      }
+      .footer-left-column, .footer-right-column{
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+      .footer-logo{
+        width: 97px;
+        height: auto;
+      }
+      #footer{
+        display: none;
+      }
+
+
+      /*]]>*/
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width:667px) {
+        .mobile-hidden{
+          display: none!important;
+        }
+        .mobile-full-width{
+          width:100%!important;
+        }
+        .hero-header-left-column,
+        .hero-header-right-column,
+        .cta-section-left-column,
+        .cta-section-right-column,
+        .download-section-left-column,
+        .download-section-right-column{
+          width: 100%!important; 
+          display: block;
+        }
+        .gap-left, .mobile-gap-left{
+          padding-left: 20px!important;
+        }
+        .gap-right, .mobile-gap-right{
+          padding-right: 20px!important;
+        }
+        .header-logo{
+          width: 90px!important;
+        }
+        .hero-header-left-column{
+          padding-top:60px;
+          padding-bottom: 60px;
+          height: auto!important;
+          min-height: 245px;
+        }
+        .hero-header-left-column br{
+          display: none;
+        }
+        .hero-header-right-column{
+          height: 300px;
+        }
+        .cta-section-left-column{
+          padding-bottom: 20px;
+        }
+        .p-footer{
+          padding:16px 24px!important;
+        }
+        .logo-header{
+          width: 76px!important;
+          height: auto!important;
+        }
+        .richtext-section{
+          padding-top: 30px!important;
+          padding-bottom: 30px!important;
+        }
+        .download-section-left-column{
+          padding-top: 30px;
+        }
+        .mobile-outer-wrapper{
+          padding: 20px!important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td class="mobile-outer-wrapper" style="padding: 40px 20px;background-color: #f2f2f2;">
+          <table class="mobile-full-width" align="center" style="width: 600px;background-color: #ffffff;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                      {% module "module_16538079502861" path='/Email Templates - 2022/modules/Header Module', label="Header Module", no_wrapper=True,
+                      logo = {
+                        "src" : "{{ get_asset_url('/Email Templates - 2022/images/atlas-logo.png') }}",
+                        "alt" : "atlas-logo"
+                      },
+                      phone_number = "(888) 566-6126"
+                      %}
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                      {% module "module_165381192039862" path='/Email Templates - 2022/modules/Hero Module', label="Hero Module", no_wrapper=True,
+                      icon = {
+                        "src" : "{{ get_asset_url('/Email Templates - 2022/images/calander-icon.png') }}",
+                        "alt" : "calender-icon"
+                      },
+                      icon_caption="UPCOMING EVENT"
+                      image = {
+                        "src" : "{{ get_asset_url('/Email Templates - 2022/images/city-image.png') }}",
+                        "alt" : "city-image"
+                      },
+                      title = "Meet Us in Mile High City!"
+                      %}
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                      {% module "module_165381018299947" path='/Email Templates - 2022/modules/Richtext Module', label="Richtext Module", no_wrapper=True,
+                      richtext="<h2 style='margin-top:0px; margin-bottom:20px; font-family:'DM Serif Text', serif; font-size:26px'><span style='font-size: 26px; color: #1259a6;'>Hello {{ personalization_token('contact.firstname', 'there') }},</span></h2>
+                      <p style='margin:0px; font-family:'Nunito Sans', sans-serif; margin-bottom:20px; line-height:150%'>Meet Atlas Health, last year’s HFMA Startup Cup Winner, at <strong>Above and Beyond, the HFMA 2022 Annual Conference!</strong> The event brings together industry leaders to explore healthcare cost-effectiveness and better outcomes.</p><br/>
+                      <p style='margin:0px; font-family:'Nunito Sans', sans-serif; margin-bottom:20px; line-height:150%'>Atlas and a health system partner will present among 70 sessions (earn up to 16 CPE credits) and <a href='https://atlas.health/solution' rel='noopener' style='text-decoration:underline; font-weight:bold; color:#ed3847' data-hs-link-id='0' target='_blank'><span style='text-decoration: underline; color: #ed3847;'><strong>share our AI-powered patient assistance and health equity solution</strong></span></a> <strong>to connect vulnerable patients to $30B in philanthropic aid.</strong> Here are the details:</p><br/>"
+                      %}
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                      {% module "module_165384121211611" path='/Email Templates - 2022/modules/Event Details Module', label="Event Details Module",
+                      background_image = {
+                        "src" : "{{ get_asset_url('/Email Templates - 2022/images/event-background.png') }}",
+                        "alt" : "event-background-img"
+                      },
+                      richtext = "<h3 style='margin-top:0px; margin-bottom:20px; font-family:'DM Serif Text', serif; font-size:24px'><span style='color: #a8e3f5;'>When</span></h3>
+                      <p style='margin:0px; font-family:'Nunito Sans', sans-serif; margin-bottom:20px; line-height:150%'><span style='color: #ffffff;'>Sunday-Wednesday, June 26-29, 2022</span></p><br/>
+                      <h3 style='margin-top:0px; margin-bottom:20px; font-family:'DM Serif Text', serif; font-size:24px'><span style='color: #a8e3f5;'>Where:</span></h3>
+                      <p style='margin:0px; font-family:'Nunito Sans', sans-serif; margin-bottom:20px; line-height:150%'><span style='color: #ffffff;'>Denver, CO</span></p><br/>
+                      <h3 style='margin-top:0px; margin-bottom:20px; font-family:'DM Serif Text', serif; font-size:24px'><span style='color: #a8e3f5;'>Booth #420:</span></h3>
+                      <p style='margin:0px; font-family:'Nunito Sans', sans-serif; margin-bottom:20px; line-height:150%'><span style='color: #ffffff;'>Meet Atlas’s founder and check out a live software demo – every demo will earn a donation to the American Cancer Society or Hire Heroes.</span></p><br/>
+                      <h3 style='margin-top:0px; margin-bottom:20px; font-family:'DM Serif Text', serif; font-size:24px'><span style='color: #a8e3f5;'>Educational Session:</span></h3>
+                      <p style='margin:0px; font-family:'Nunito Sans', sans-serif; margin-bottom:20px; line-height:150%'><span style='color: #ffffff;'>Join Stephen Forney, Chief Financial Officer at Covenant Health, and Tim L’Hommedieu, SVP Pharmacy at Atlas, as they present a best practices case study,<strong> Optimizing Philanthropic Medical Financial Aid.</strong></span></p>                  
+                      "
+                      %}
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                      {% module "module_16538404789711" path='/Email Templates - 2022/modules/Richtext with Button Module', label="Richtext with Button",
+                      title="Discover more and schedule a meeting with Atlas in Denver.",
+                      button = {
+                        'button_label' : 'Meet With Us',
+                        'url' : {
+                          'content_id' : null,
+                          'type' : 'EXTERNAL',
+                          'href' : 'https://atlas.health/resources/events-2022-hfma-annual-conference'
+                        },
+                      }
+                      %}
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                      {% module "module_165381120831359" path='/Email Templates - 2022/modules/Footer Module', label="Footer Module", no_wrapper=True,
+                      logo = {
+                        "src" : "{{ get_asset_url('/Email Templates - 2022/images/atlas-logo-white.png') }}",
+                        "alt" : ""
+                      },
+                      linkedin_icon = {
+                        "src" : "{{ get_asset_url('/Email Templates - 2022/images/linkedin-logo.png') }}",
+                        "alt" : ""
+                      },
+                      linkedin_url = {
+                        "url" : {
+                          "content_id" : null,
+                          "type" : "EXTERNAL",
+                          "href" : ""
+                        }
+                      },
+                      linkedin_caption_text="Join the conversation!"
+                      %}
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="full-width" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="gap-left gap-right" style="padding-top:16px;padding-bottom:16px;color:#0A2B4F;font-size: 10px; text-align: center;">
+                      If you would no longer like to receive these emails, please click here: <a style="color:#0A2B4F;text-decoration: none;font-weight: bold;border-bottom: 2px solid #ED3847" class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe</a>
+                    </td>
+                  </tr>
+                </table>
+
+
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+
+    <!-- Office location information and unsubscribe links -->
+    <p id="footer">
+      {{ site_settings.company_name }}&nbsp;
+      {{ site_settings.company_street_address_1 }}&nbsp;
+      {{ site_settings.company_street_address_2 }}&nbsp;
+      {{ site_settings.company_city }}&nbsp;
+      {{ site_settings.company_state }}&nbsp;
+      {{ site_settings.company_zip }}&nbsp;
+      {{ site_settings.company_country }}&nbsp;
+      <br/>
+      <br/>
+      You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }}.
+      <br/>
+      Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a> to choose the types of emails you receive.
+      <br/>
+      <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe from all future emails</a>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!--
+    templateType: email_subscription_preferences_page
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+    {{ require_css(get_asset_url("/Email Templates - 2022/subscription templates/css/Atlas_System_Templates.css")) }}
+    
+    <style>
+      .st-main .page-header{
+        margin-bottom: 20px;
+      }
+      .st-main .page-header h1{
+        margin-bottom: 5px;
+      }
+      .st-main .page-header h2{
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .st-main .subscribe-options{
+        margin-top: 30px;
+      }
+      .header{
+        margin-bottom: 10px;
+      }
+      .st-main .item{
+        background-color: #F2F2F2;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+      }
+      .st-main .fakelabel, .st-main label{
+        display: flex;
+      }
+      .st-main .fakelabel span, .st-main label span{
+        margin-top: -4px;
+        margin-left: 10px;
+        font-family: 'DM Serif Text', serif;
+        font-size: 22px;
+        line-height: normal;
+      }
+      .checkbox-row + p{
+        margin-left: 32px; 
+      }
+      .st-main form .hs-button{
+        margin-top: 25px;
+      }
+      #content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #content .header, #content .subscribe-options {
+        width: 100%;
+      }
+      #content .item {
+        margin-right: 20px;
+      }
+    </style>
+    
+    
+  </head>
+  <body>
+    
+    {% module "Atlast System Template Header" path="/Email Templates - 2022/subscription templates/modules/Atlast_System_Templates_Header", label="Atlast_System_Templates_Header" %}
+    
+    <div class="st-main">
+      <div class="st-container">
+        {% module "email_subscription_preferences_page_template_subscription_preferences" path="@hubspot/email_subscriptions" label="Subscription Preferences" %}
+        
+        <br/>
+        <small>© 2022 Atlas Health</small>
+      </div>
+    </div>
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>

@@ -1,0 +1,57 @@
+[ {
+  "id" : "f7be7c8b-e1ad-2eeb-feeb-bcf53a5508b3",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "0ca573dd-2a75-e29a-abc4-860bd9cb26c8",
+  "name" : "icon_caption",
+  "display_width" : null,
+  "label" : "Icon Caption",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Report"
+}, {
+  "id" : "d551c977-0b5b-2a1b-13fc-a51d273b0312",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Connecting patients with Philanthropic Financial Aid"
+}, {
+  "id" : "c42d1ccf-5acb-aeed-eef5-6902cc7604a7",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+} ]

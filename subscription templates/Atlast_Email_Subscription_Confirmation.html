@@ -1,0 +1,49 @@
+<!--
+    templateType: email_subscriptions_confirmation_page
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+    {{ require_css(get_asset_url("/Email Templates - 2022/subscription templates/css/Atlas_System_Templates.css")) }}
+    
+    <style>
+      .page-header{
+        margin-bottom: 20px;
+      }
+      
+      #content{
+        font-family: 'DM Serif Text', serif;
+        font-size: 26px;
+        line-height: 36px;
+      }
+      .page-header h2{
+        font-size: 20px;
+        font-family: Arial;
+        line-height: 26px;
+        font-weight: normal;
+        margin-bottom: 40px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    
+    
+    {% module "Atlast System Template Header" path="/Email Templates - 2022/subscription templates/modules/Atlast_System_Templates_Header", label="Atlast_System_Templates_Header" %}
+    
+    <div class="st-main">
+      <div class="st-container">
+        {% module "email_subscriptions_confirmation_page_template_subscriptions_confirmation" path="@hubspot/email_subscriptions_confirmation" label="Subscriptions Confirmation Message" header="Email Unsubscribe" %}
+        <br/>
+        © 2022 Atlas Health
+      </div>
+    </div>
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>
